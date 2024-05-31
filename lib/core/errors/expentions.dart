@@ -1,4 +1,4 @@
-import 'package:clean_architecture/core/errors/error_model.dart';
+import 'error_model.dart';
 import 'package:dio/dio.dart';
 
 //!ServerException

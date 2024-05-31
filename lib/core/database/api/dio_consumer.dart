@@ -1,6 +1,6 @@
-import 'package:clean_architecture/core/database/api/api_consumer.dart';
-import 'package:clean_architecture/core/database/api/end_points.dart';
-import 'package:clean_architecture/core/errors/expentions.dart';
+import 'api_consumer.dart';
+import 'end_points.dart';
+import '../../errors/expentions.dart';
 import 'package:dio/dio.dart';
 
 class DioConsumer extends ApiConsumer {

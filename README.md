@@ -1,16 +1,48 @@
-# clean_architecture
+# Flutter Clean Architecture App with Dio
 
-A new Flutter project.
+This repository contains a Flutter application that follows the Clean Architecture pattern and handles API requests using the Dio package.
 
-## Getting Started
+## Table of Contents
 
-This project is a starting point for a Flutter application.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Architecture](#architecture)
 
-A few resources to get you started if this is your first Flutter project:
+## Introduction
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project is a Flutter application designed to demonstrate the implementation of Clean Architecture principles. It uses Dio for making HTTP requests and managing API interactions efficiently.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+- Clean Architecture
+- Dio for API handling
+- Separation of concerns
+- Testable code
+
+## Architecture
+
+The project is organized into several layers:
+
+- **Core Layer**: Contains core utilities and services such as connection, database, error handling, and parameters.
+- **Feature Layer**: Contains feature-specific code such as data models, domain entities, and presentation logic.
+
+### Directory Structure
+
+```plaintext
+lib/
+├── core/
+│   ├── connection/
+│   ├── database/
+│   ├── errors/
+│   └── params/
+├── features/
+│   └── user/
+│       ├── data/
+│       ├── domain/
+│       └── presentation/
+│           ├── cubit/
+│           ├── screens/
+│           └── widgets/
+└── main.dart
+```
+![9238e663-122f-4a9d-903d-ae45b33400f6](https://github.com/aliabdelnaby/clean-architecture/assets/70640625/3ab35291-42a7-4f7d-8ae9-cf8300b1c882)

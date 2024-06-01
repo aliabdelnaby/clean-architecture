@@ -20,6 +20,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
     return Column(
       children: [
         Slider(
+          activeColor: Colors.blueAccent,
           value: id,
           onChanged: (value) {
             setState(() {

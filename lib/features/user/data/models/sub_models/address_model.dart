@@ -1,4 +1,5 @@
 import 'package:clean_architecture/core/database/api/end_points.dart';
+import 'package:clean_architecture/features/user/data/models/sub_models/geo_model.dart';
 import 'package:clean_architecture/features/user/domain/entities/sub_entities/address_entity.dart';
 
 class AddressModel extends AddressEntity {
@@ -16,7 +17,7 @@ class AddressModel extends AddressEntity {
       suite: json[ApiKeys.suite],
       city: json[ApiKeys.city],
       zipcode: json[ApiKeys.zipcode],
-      geo: json[ApiKeys.geo],
+      geo: GeoModel.fromJson(json[ApiKeys.geo]),
     );
   }
 

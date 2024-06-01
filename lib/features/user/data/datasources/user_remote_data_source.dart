@@ -5,7 +5,8 @@ import 'package:clean_architecture/features/user/data/models/user_model.dart';
 
 class UserRemoteDataSource {
   final ApiConsumer apiConsumer;
-  UserRemoteDataSource(this.apiConsumer);
+
+  UserRemoteDataSource({required this.apiConsumer});
   Future<UserModel> getUserData(UserParams params) async {
     final response = await apiConsumer.get(
       "${EndPoints.user}/${params.id}",
